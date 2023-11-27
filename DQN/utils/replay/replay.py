@@ -18,7 +18,7 @@ class ReplayBuffer:
                 "obs": (obs_space.shape, obs_space.dtype),
                 "action": (action_space.shape, action_precision),
                 "reward": ((), np.float32),
-                "terminal": ((), bool),
+                "terminal": ((), np.bool_),
             }
         )
 
